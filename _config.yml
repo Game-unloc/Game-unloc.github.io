@@ -1,1 +1,32 @@
+title: Classroom 6x - Unblocked Games
+description: Play unblocked games at school with six categories - action, adventure, puzzle, sports, strategy & multiplayer
+url: https://goblinkingdev.github.io/unblocked-games
+baseurl: ""
+
 permalink: /game/:basename/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .cache
+  - .config
+  - .local
+  - .upm
+  - server.py
+  - duck-to-ducky.py
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+  - CONTRIBUTORS.md
+
+host: 0.0.0.0
+port: 5000
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
