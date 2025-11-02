@@ -1,4 +1,3 @@
-modules = ["ruby"]
 [agent]
 expertMode = true
 
@@ -20,7 +19,7 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python3 server.py"
+args = "ruby server.rb"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
@@ -29,7 +28,3 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 41229
-externalPort = 3000
